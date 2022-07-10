@@ -1,0 +1,337 @@
+extends layouts/default
+include helpers/mixins
+
+block variables
+	- const title = "Главная"
+
+block content
+	main.content 
+		section.main
+			include ../blocks/modules/header/header
+			.container
+				h1.h1.main__title
+					p.text-gradient НОВЫЕ ЗУБЫ
+					p за 1 день
+				.main-switch
+					.main__description 
+						.main__description-pic
+							img(src="./img/fire.svg", alt="")
+						p.main__description-text Безупречное качество <br>по самой низкой цене в Москве
+					.main__price 
+						.main__summ 179 900 ₽
+						.main__price-description 
+							.main__price-pic
+								img(src="./img/jaw.webp", alt="")
+							.main__price-text Цена указана <span>за одну челюсть</span>
+				.main__btns 
+					button.btn.btn--orange 
+						span Забронировать цену
+					button.btn.btn--dark 
+						span Нашли дешевле?
+				.main__list 
+					a.main__item(href="#") 
+						.main__item-title БЕЗУПРЕЧНАЯ РЕПУТАЦИЯ
+						.main__item-text Более 300+ видеоотзывов пациентов
+					a.main__item(href="#") 
+						.main__item-title ЛУЧШИЕ СПЕЦИАЛИСТЫ
+						.main__item-text Средний опыт наших врачей — 15 лет
+					a.main__item(href="#") 
+						.main__item-title ЧЕСТНЫЕ ЦЕНЫ ПОД КЛЮЧ
+						.main__item-text Без рекламных уловок и скрытых платежей
+					a.main__scroll(href="#reports") 
+						img(src="./img/scroll.svg", alt="")
+		section.reports#reports 
+			.container 
+				.title.title--center 
+					h2.h2 Отзывы <span>пациентов</span>
+					.small-title которые восстановили зубы по методу <span>All-on-4</span>
+				.reports-slider 
+					.swiper-wrapper 
+						.swiper-slide.report-slide
+							.report-slide__trigger
+							.report__video
+								video(src="./video.mp4" poster="/poster.webp")
+							.report__play
+								.report__circle
+								.report__play-ico
+									img(src="./img/play.svg", alt="")
+							.report__message
+								.report__message-ico
+									img(src="./img/message-ico.svg", alt="")
+								.report__message-text Сейчас <span>я совершенно другой человек!</span>
+							a.all-video(href="#") 
+								| Cмотреть на
+								.all-video__pic
+									img.all-video-active(src="./img/yt-button.svg", alt="")
+									img.all-video-hover(src="./img/yt-button-hover.svg", alt="")
+						.swiper-slide.report-slide
+							.report-slide__trigger
+							.report__video
+								video(src="./video.mp4" poster="/poster.webp")
+							.report__play
+								.report__circle
+								.report__play-ico
+									img(src="./img/play.svg", alt="")
+							.report__message
+								.report__message-ico
+									img(src="./img/message-ico.svg", alt="")
+								.report__message-text Сейчас <span>я совершенно другой человек!</span>
+							a.all-video(href="#") 
+								| Cмотреть на
+								.all-video__pic
+									img.all-video-active(src="./img/yt-button.svg", alt="")
+									img.all-video-hover(src="./img/yt-button-hover.svg", alt="")
+						.swiper-slide.report-slide
+							.report-slide__trigger
+							.report__video
+								video(src="./video.mp4" poster="/poster.webp")
+							.report__play
+								.report__circle
+								.report__play-ico
+									img(src="./img/play.svg", alt="")
+							.report__message
+								.report__message-ico
+									img(src="./img/message-ico.svg", alt="")
+								.report__message-text Сейчас <span>я совершенно другой человек!</span>
+							a.all-video(href="#") 
+								| Cмотреть на
+								.all-video__pic
+									img.all-video-active(src="./img/yt-button.svg", alt="")
+									img.all-video-hover(src="./img/yt-button-hover.svg", alt="")
+						.swiper-slide.report-slide
+							.report-slide__trigger
+							.report__video
+								video(src="./video.mp4" poster="/poster.webp")
+							.report__play
+								.report__circle
+								.report__play-ico
+									img(src="./img/play.svg", alt="")
+							.report__message
+								.report__message-ico
+									img(src="./img/message-ico.svg", alt="")
+								.report__message-text Сейчас <span>я совершенно другой человек!</span>
+							a.all-video(href="#") 
+								| Cмотреть на
+								.all-video__pic
+									img.all-video-active(src="./img/yt-button.svg", alt="")
+									img.all-video-hover(src="./img/yt-button-hover.svg", alt="")
+						.swiper-slide.report-slide
+							.report-slide__trigger
+							.report__video
+								video(src="./video.mp4" poster="/poster.webp")
+							.report__play
+								.report__circle
+								.report__play-ico
+									img(src="./img/play.svg", alt="")
+							.report__message
+								.report__message-ico
+									img(src="./img/message-ico.svg", alt="")
+								.report__message-text Сейчас <span>я совершенно другой человек!</span>
+							a.all-video(href="#") 
+								| Cмотреть на
+								.all-video__pic
+									img.all-video-active(src="./img/yt-button.svg", alt="")
+									img.all-video-hover(src="./img/yt-button-hover.svg", alt="")
+						.swiper-slide.report-slide
+							.report-slide__trigger
+							.report__video
+								video(src="./video.mp4" poster="/poster.webp")
+							.report__play
+								.report__circle
+								.report__play-ico
+									img(src="./img/play.svg", alt="")
+							.report__message
+								.report__message-ico
+									img(src="./img/message-ico.svg", alt="")
+								.report__message-text Сейчас <span>я совершенно другой человек!</span>
+							a.all-video(href="#") 
+								| Cмотреть на
+								.all-video__pic
+									img.all-video-active(src="./img/yt-button.svg", alt="")
+									img.all-video-hover(src="./img/yt-button-hover.svg", alt="")
+						.swiper-slide.report-slide
+							.report-slide__trigger
+							.report__video
+								video(src="./video.mp4" poster="/poster.webp")
+							.report__play
+								.report__circle
+								.report__play-ico
+									img(src="./img/play.svg", alt="")
+							.report__message
+								.report__message-ico
+									img(src="./img/message-ico.svg", alt="")
+								.report__message-text Сейчас <span>я совершенно другой человек!</span>
+							a.all-video(href="#") 
+								| Cмотреть на
+								.all-video__pic
+									img.all-video-active(src="./img/yt-button.svg", alt="")
+									img.all-video-hover(src="./img/yt-button-hover.svg", alt="")
+						.swiper-slide.report-slide
+							.report-slide__trigger
+							.report__video
+								video(src="./video.mp4" poster="/poster.webp")
+							.report__play
+								.report__circle
+								.report__play-ico
+									img(src="./img/play.svg", alt="")
+							.report__message
+								.report__message-ico
+									img(src="./img/message-ico.svg", alt="")
+								.report__message-text Сейчас <span>я совершенно другой человек!</span>
+							a.all-video(href="#") 
+								| Cмотреть на
+								.all-video__pic
+									img.all-video-active(src="./img/yt-button.svg", alt="")
+									img.all-video-hover(src="./img/yt-button-hover.svg", alt="")
+						
+		section.prices
+			.prices__circle
+			.container 
+				.title.prices__title
+					.h2 Честные <br><span>цены</span>
+					.prices__small-title Более 5000 пациентов <br>восстановили зубы <br>по методу <span>«All-on-4»</span> в Дантистофф
+				.prices__list 
+					.price
+						.price__title 
+							span Osstem
+							img(src="./img/price-1.svg", alt="")
+						.discont-title.--red 
+							span АКЦИЯ
+						.price__block 
+							.price__block-name Срок службы всей конструкии
+							.price__block-text 10-20 лет
+						.price__block 
+							.price__block-name Гарантия на имплант
+							.price__block-text 3 года
+						.price__block 
+							.price__block-name Гарантия на протез
+							.price__block-text 2 года
+						.price__summ
+							.price__summ-title 
+								img(src="./img/price-jaw.webp", alt="")
+								span цена С протезом
+							.price__last-summ 
+								span 240 000 ₽
+							.price__new-summ 179 000 ₽
+							.price__summ-description Цена акционная. Предложение ограничено
+							button.btn.btn--orange.btn--white
+								span Записаться
+					.price.price--big
+						.price-wrap
+							.price__title 
+								span NeoDent
+								img(src="./img/price-2.svg", alt="")
+							.discont-title.--gold 
+								span Дантистофф рекомендует
+							.price__block 
+								.price__block-name Срок службы всей конструкии
+								.price__block-text 20-25 лет
+							.price__block 
+								.price__block-name Гарантия на имплант
+								.price__block-text 4 года
+							.price__block 
+								.price__block-name Гарантия на протез
+								.price__block-text 2 года
+							.price__summ
+								.price__summ-title 
+									img(src="./img/price-jaw.webp", alt="")
+									span цена С протезом
+								.price__numbers 399 900₽
+							button.btn.btn--orange
+								span Записаться
+					.price
+						.price__title 
+							span Straumann
+							img(src="./img/price-3.svg", alt="")
+						.discont-title.--silver 
+							span Дантистофф рекомендует
+						.price__block 
+							.price__block-name Срок службы всей конструкии
+							.price__block-text Бессрочно
+						.price__block 
+							.price__block-name Гарантия на имплант
+							.price__block-text 10 лет
+						.price__block 
+							.price__block-name Гарантия на протез
+							.price__block-text 2 года
+						.price__summ
+							.price__summ-title 
+								img(src="./img/price-jaw.webp", alt="")
+								span цена С протезом
+							.price__numbers 399 900₽
+						button.btn.btn--orange.btn--white 
+							span Записаться
+		section.sqwiz
+			.sqwiz-text виджет квиз
+		section.winner 
+			.container 
+				.winner__title 
+					| Дантистофф — лучшая 
+					p клиника 2021 года
+					| в номинации 
+					span «Народный выбор»
+				.winner__text 	За создание эталонной систем контроля качества  по версии Комсомольской Правды
+		section.contacts
+			.contacts__circle
+				img(src="./img/contacts-circle.svg", alt="")
+			.contacts__bottom
+			.container
+				.contacts__title Контакты 
+				.contacts__list 
+					.contact 
+						.contact__pic
+							img(src="./img/contact-1.webp", alt="")
+						.contact__title +7 (495) 324-44-47 
+						.contact__text Звоните с 9:00 до 21:00
+					.contact 
+						.contact__pic
+							img(src="./img/contact-2.webp", alt="")
+						.contact__title 5 клиник рядом с метро
+						a.contact__text(href="#map")  Контакты и схема проезда
+					.contact 
+						.contact__pic
+							img(src="./img/contact-3.webp", alt="")
+						.contact__title info@dantistoff.ru
+						.contact__text Пишите нам
+			a.contacts__scroll(href="#") 
+				img(src="./img/scroll.svg", alt="")
+		section.map 
+			#map
+			.map__panel 
+				.map__title Стоматология <br>на <span>Проспекте Мира</span>
+				.map__blocks
+					.map__block 
+						.map__block-description Адрес клиники
+						.map__block-title.map__block-title--address г. Москва, Проспект Мира, 53
+					.map__block 
+						.map__block-description Бесплатная консультация!
+						.map__block-title +7 (495) 324-44-47
+					.map__block 
+						.map__block-description Станция метро
+						.map__underground
+							.map__block-title
+								<svg class="under-ico" width="21" height="15" viewBox="0 0 21 15" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14.5204 0.0644069L14.3438 0.0641013L10.5898 7.68494L6.70076 -0.000976562L1.37607 13.8838H0V14.999H7.53861V13.8838H6.0428L7.53861 9.5444L10.5898 14.999L13.5215 9.5444L15.0171 13.8838H13.5215V14.999H21V13.8838H19.7044L14.5204 0.0644069Z"/>
+								</svg>
+								span Проспект Мира
+							.map__steps 
+								img(src="./img/step.svg", alt="")
+								span 5 минут от метро
+					.map__block 
+						.map__block-wrap
+							.map__block-item
+								.map__block-description Понедельник — Суббота
+								.map__block-title с 08:00 до 23:00
+							.map__block-item
+								.map__block-description Воскресенье
+								.map__block-title с 08:00 до 23:00
+				.map__btns 
+					button.btn.btn--orange
+						span Заказть обратный звонок
+
+	include ../blocks/modules/footer/footer
+
+block scripts
+	script(src="https://api-maps.yandex.ru/2.1/?apikey=17c2ce43-9cd7-4184-94de-a46354f7f503&lang=ru_RU" type="text/javascript")
+	script(src="js/vendor.js")
+	script(src="js/main.js")

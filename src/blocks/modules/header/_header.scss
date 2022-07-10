@@ -1,0 +1,133 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  z-index: 1000;
+  transition: .4s;
+
+  &.--scroll {
+    background-color: rgba(0, 0, 0, .9);
+    box-shadow: 0px 4px 20px rgba(165, 165, 165, 0.2);
+  }
+
+}
+
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  max-width: 187px;
+}
+
+.prize {
+  display: flex;
+  align-items: center;
+}
+
+.prize__pic {
+  margin-right: 5px;
+  filter: drop-shadow(-4px -2px 20px #416172);
+  max-width: 40px;
+}
+
+.prize__text {
+  background: linear-gradient(95.54deg, #BCC4C8 21.48%, #638594 91.35%, #BBEBFF 98.87%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 139%;
+  max-width: 160px;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+.socials__link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(#fff, .05);
+  transition: .4s;
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+
+  &:hover {
+    background-color: rgba(#fff, .15);
+
+    &.--vk {
+      background-color: #3375F6;
+    }
+
+    &.--tm {
+      background-color: #5D9DCC;
+    }
+
+    &.--yt {
+      background-color: #FF0000;
+    }
+  }
+
+}
+
+.header__contact {
+  text-align: center;
+}
+
+.header__contact-name {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  color: #fff;
+}
+
+.header__contact-link {
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 15px;
+  border-bottom: 1px dashed #B1B1B1;
+  color: #B1B1B1;
+  text-transform: uppercase;
+  transition: border .4s;
+
+  &:hover {
+    border-bottom-color: transparent;
+  }
+}
+
+.header__wrap {
+  margin-bottom: 30px;
+}
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #B1B1B1;
+  transition: color .4s;
+
+  &:hover {
+    color: #fff;
+  }
+}

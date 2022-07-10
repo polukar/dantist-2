@@ -1,0 +1,116 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 67px;
+  padding-left: 55px;
+  padding-right: 55px;
+  border-radius: 10px;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  transition: .4s;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+
+  &.btn--small {
+    height: 46px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  span {
+    position: relative;
+    z-index: 10;
+  }
+
+  &.btn--orange {
+    color: #fff;
+    background-color: transparent;
+
+    &:not(.btn--small) {
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        z-index: 5;
+      }
+
+      &:hover {
+        color: #F76633;
+      }
+
+      background-color: transparent;
+      border: 2px solid #F76633;
+
+    }
+
+    &:before {
+      background: linear-gradient(180deg, #EB8946 0%, #F76633 100%);
+      box-shadow: -4px -2px 20px rgba(255, 126, 7, 0.3);
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      transition: .4s;
+      z-index: 7;
+    }
+
+
+
+    &:hover {
+      &:before {
+        opacity: 0;
+      }
+    }
+
+    &.btn--small {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 20px;
+
+      &:hover {
+        background-color: rgba(#fff, .1);
+      }
+    }
+  }
+
+  &.btn--dark {
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+
+    &:before {
+      background: linear-gradient(180deg, #EB8946 0%, #F76633 100%);
+      box-shadow: -4px -2px 20px rgba(255, 126, 7, 0.3);
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      transition: .4s;
+      z-index: 7;
+      opacity: 0;
+    }
+
+    &:hover {
+      color: #fff;
+
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+}
