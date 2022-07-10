@@ -4,25 +4,25 @@ let mapInfo = [
     underground: "Беговая",
     adress: "г. Москва, Хорошёвское шоссе, 48",
     color: "--purple",
-    position: [55.776370, 37.535017]
+    position: [55.776292, 37.535549]
   },
   {
     underground: "Проспект Мира",
-    adress: "г. Москва, Проспект Мира, 53",
+    adress: "г. Москва, Проспект Мира 53с1",
     color: "--orange",
-    position: [55.771054, 37.862498],
+    position: [55.784804, 37.634170],
   },
   {
     underground: "Раменки",
     adress: "г. Москва, Столетова, 11",
     color: "--yellow",
-    position: [55.703753, 37.499695],
+    position: [55.703499, 37.499083],
   },
   {
     underground: "Академическая",
     adress: "г. Москва, Винокурова, 2",
     color: "--orange",
-    position: [55.689999, 37.580840],
+    position: [55.689312, 37.581490],
   },
   {
     underground: "Савёловская",

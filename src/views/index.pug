@@ -6,8 +6,41 @@ block variables
 
 block content
 	main.content 
+		include ../blocks/modules/header/header
 		section.main
-			include ../blocks/modules/header/header
+			.container
+				h1.h1.main__title
+					p.text-gradient НОВЫЕ ЗУБЫ
+					p за 1 день
+				.main-switch
+					.main__description 
+						.main__description-pic
+							img(src="./img/fire.svg", alt="")
+						p.main__description-text Безупречное качество <br>по самой низкой цене в Москве
+					.main__price 
+						.main__summ 179 900 ₽
+						.main__price-description 
+							.main__price-pic
+								img(src="./img/jaw.webp", alt="")
+							.main__price-text Цена указана <span>за одну челюсть</span>
+				.main__btns 
+					button.btn.btn--orange 
+						span Забронировать цену
+					button.btn.btn--dark 
+						span Нашли дешевле?
+				.main__list 
+					a.main__item(href="#") 
+						.main__item-title БЕЗУПРЕЧНАЯ РЕПУТАЦИЯ
+						.main__item-text Более 300+ видеоотзывов пациентов
+					a.main__item(href="#") 
+						.main__item-title ЛУЧШИЕ СПЕЦИАЛИСТЫ
+						.main__item-text Средний опыт наших врачей — 15 лет
+					a.main__item(href="#") 
+						.main__item-title ЧЕСТНЫЕ ЦЕНЫ ПОД КЛЮЧ
+						.main__item-text Без рекламных уловок и скрытых платежей
+					a.main__scroll(href="#reports") 
+						img(src="./img/scroll.svg", alt="")
+		section.main.main--new
 			.container
 				h1.h1.main__title
 					p.text-gradient НОВЫЕ ЗУБЫ
@@ -50,7 +83,7 @@ block content
 						.swiper-slide.report-slide
 							.report-slide__trigger
 							.report__video
-								video(src="./video.mp4" poster="/poster.webp")
+								video(src="./video.mp4" poster="./img/poster.webp")
 							.report__play
 								.report__circle
 								.report__play-ico
@@ -67,7 +100,41 @@ block content
 						.swiper-slide.report-slide
 							.report-slide__trigger
 							.report__video
-								video(src="./video.mp4" poster="/poster.webp")
+								video(src="./video.mp4" poster="./img/poster-2.webp")
+							.report__play
+								.report__circle
+								.report__play-ico
+									img(src="./img/play.svg", alt="")
+							.report__message
+								.report__message-ico
+									img(src="./img/message-ico.svg", alt="")
+								.report__message-text Сейчас <span>я совершенно другой человек!</span>
+							a.all-video(href="#") 
+								| Cмотреть на
+								.all-video__pic
+									img.all-video-active(src="./img/yt-button.svg", alt="")
+									img.all-video-hover(src="./img/yt-button-hover.svg", alt="") 
+						.swiper-slide.report-slide
+							.report-slide__trigger
+							.report__video
+								video(src="./video.mp4" poster="./img/poster-3.webp")
+							.report__play
+								.report__circle
+								.report__play-ico
+									img(src="./img/play.svg", alt="")
+							.report__message
+								.report__message-ico
+									img(src="./img/message-ico.svg", alt="")
+								.report__message-text Сейчас <span>я совершенно другой человек!</span>
+							a.all-video(href="#") 
+								| Cмотреть на
+								.all-video__pic
+									img.all-video-active(src="./img/yt-button.svg", alt="")
+									img.all-video-hover(src="./img/yt-button-hover.svg", alt="") 
+						.swiper-slide.report-slide
+							.report-slide__trigger
+							.report__video
+								video(src="./video.mp4" poster="./img/poster-4.webp")
 							.report__play
 								.report__circle
 								.report__play-ico
@@ -84,7 +151,7 @@ block content
 						.swiper-slide.report-slide
 							.report-slide__trigger
 							.report__video
-								video(src="./video.mp4" poster="/poster.webp")
+								video(src="./video.mp4" poster="./img/poster-5.webp")
 							.report__play
 								.report__circle
 								.report__play-ico
@@ -98,92 +165,11 @@ block content
 								.all-video__pic
 									img.all-video-active(src="./img/yt-button.svg", alt="")
 									img.all-video-hover(src="./img/yt-button-hover.svg", alt="")
-						.swiper-slide.report-slide
-							.report-slide__trigger
-							.report__video
-								video(src="./video.mp4" poster="/poster.webp")
-							.report__play
-								.report__circle
-								.report__play-ico
-									img(src="./img/play.svg", alt="")
-							.report__message
-								.report__message-ico
-									img(src="./img/message-ico.svg", alt="")
-								.report__message-text Сейчас <span>я совершенно другой человек!</span>
-							a.all-video(href="#") 
-								| Cмотреть на
-								.all-video__pic
-									img.all-video-active(src="./img/yt-button.svg", alt="")
-									img.all-video-hover(src="./img/yt-button-hover.svg", alt="")
-						.swiper-slide.report-slide
-							.report-slide__trigger
-							.report__video
-								video(src="./video.mp4" poster="/poster.webp")
-							.report__play
-								.report__circle
-								.report__play-ico
-									img(src="./img/play.svg", alt="")
-							.report__message
-								.report__message-ico
-									img(src="./img/message-ico.svg", alt="")
-								.report__message-text Сейчас <span>я совершенно другой человек!</span>
-							a.all-video(href="#") 
-								| Cмотреть на
-								.all-video__pic
-									img.all-video-active(src="./img/yt-button.svg", alt="")
-									img.all-video-hover(src="./img/yt-button-hover.svg", alt="")
-						.swiper-slide.report-slide
-							.report-slide__trigger
-							.report__video
-								video(src="./video.mp4" poster="/poster.webp")
-							.report__play
-								.report__circle
-								.report__play-ico
-									img(src="./img/play.svg", alt="")
-							.report__message
-								.report__message-ico
-									img(src="./img/message-ico.svg", alt="")
-								.report__message-text Сейчас <span>я совершенно другой человек!</span>
-							a.all-video(href="#") 
-								| Cмотреть на
-								.all-video__pic
-									img.all-video-active(src="./img/yt-button.svg", alt="")
-									img.all-video-hover(src="./img/yt-button-hover.svg", alt="")
-						.swiper-slide.report-slide
-							.report-slide__trigger
-							.report__video
-								video(src="./video.mp4" poster="/poster.webp")
-							.report__play
-								.report__circle
-								.report__play-ico
-									img(src="./img/play.svg", alt="")
-							.report__message
-								.report__message-ico
-									img(src="./img/message-ico.svg", alt="")
-								.report__message-text Сейчас <span>я совершенно другой человек!</span>
-							a.all-video(href="#") 
-								| Cмотреть на
-								.all-video__pic
-									img.all-video-active(src="./img/yt-button.svg", alt="")
-									img.all-video-hover(src="./img/yt-button-hover.svg", alt="")
-						.swiper-slide.report-slide
-							.report-slide__trigger
-							.report__video
-								video(src="./video.mp4" poster="/poster.webp")
-							.report__play
-								.report__circle
-								.report__play-ico
-									img(src="./img/play.svg", alt="")
-							.report__message
-								.report__message-ico
-									img(src="./img/message-ico.svg", alt="")
-								.report__message-text Сейчас <span>я совершенно другой человек!</span>
-							a.all-video(href="#") 
-								| Cмотреть на
-								.all-video__pic
-									img.all-video-active(src="./img/yt-button.svg", alt="")
-									img.all-video-hover(src="./img/yt-button-hover.svg", alt="")
-						
+					.swiper-pagination
+					//- .slider-next
+					//- 	img(src="./img/arrow-right.svg", alt="")
+					//- .slider-prev
+					//- 	img(src="./img/arrow-left.svg", alt="")
 		section.prices
 			.prices__circle
 			.container 

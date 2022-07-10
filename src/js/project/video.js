@@ -28,7 +28,7 @@ if (reportSlide) {
         let video = elem.querySelector('video');
         let trigger = elem.querySelector('.report-slide__trigger')
         video.pause();
-        video.currentTime = 0;
+        video.load();
         video.removeAttribute('controls');
         trigger.classList.remove('--fade');
         if (ind != index) {
@@ -52,16 +52,19 @@ if (reportSlide) {
 
 
       elem.addEventListener('click', () => {
-        stopVideos(index);
-        trigger.classList.add('--fade')
-        fadeOut(buttonPlay, 300);
-        video.setAttribute('controls', true);
-        video.muted = false;
-        elem.classList.add('--is-active');
-        setTimeout(() => {
-          video.currentTime = 0;
-          video.play();
-        }, 200)
+        if (!elem.classList.contains('--is-active')) {
+          stopVideos(index);
+          trigger.classList.add('--fade')
+          fadeOut(buttonPlay, 300);
+          video.setAttribute('controls', true);
+          video.muted = false;
+          elem.classList.add('--is-active');
+          setTimeout(() => {
+            video.currentTime = 0;
+            video.play();
+          }, 200)
+        }
+
       });
 
       if (!elem.classList.contains('--is-active')) {
@@ -71,8 +74,7 @@ if (reportSlide) {
         });
 
         trigger.addEventListener('mouseout', () => {
-          video.pause();
-          video.currentTime = 0;
+          video.load();
         });
       }
 
