@@ -48,7 +48,8 @@ if (reportSlide) {
     reportSlide.forEach((elem, index) => {
       let buttonPlay = elem.querySelector('.report__play');
       let video = elem.querySelector('.report__video video');
-      let trigger = elem.querySelector('.report-slide__trigger')
+      let trigger = elem.querySelector('.report-slide__trigger');
+      let close = elem.querySelector('.slider__close ');
 
 
       elem.addEventListener('click', () => {
@@ -64,8 +65,14 @@ if (reportSlide) {
             video.play();
           }, 200)
         }
-
       });
+
+      close.addEventListener('click', () => {
+        video.load();
+        setTimeout(() => {
+          stopVideos(100);
+        }, 100)
+      })
 
       if (!elem.classList.contains('--is-active')) {
         trigger.addEventListener('mouseover', () => {

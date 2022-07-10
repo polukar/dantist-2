@@ -46,10 +46,11 @@
 
       &:hover {
         color: #F76633;
+        border: 2px solid #F76633;
       }
 
       background-color: transparent;
-      border: 2px solid #F76633;
+      border: 2px solid transparent;
 
     }
 

@@ -1224,6 +1224,10 @@
     .all-video {
       transform: translateY(0);
     }
+
+    .slider__close {
+      display: block;
+    }
   }
 
 
@@ -1475,6 +1479,16 @@
 
 .swiper-pagination-bullet-active {
   background-color: #000;
+}
+
+
+.slider__close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 200;
+  cursor: pointer;
+  display: none;
 }
 
 // mobile
