@@ -509,23 +509,25 @@
 }
 
 
-.price:not(.price--big) {}
+.price:not(.price--big) {
 
-.btn--orange.btn--white {
-  color: #F76633;
+  .btn--orange.btn--white {
+    color: #F76633;
+    border: 2px solid #F76633;
 
-  &::before {
-    opacity: 0;
-  }
-
-  &:hover {
-    span {
-      color: #fff;
-      transition: .4s;
+    &::before {
+      opacity: 0;
     }
 
-    &:before {
-      opacity: 1;
+    &:hover {
+      span {
+        color: #fff;
+        transition: .4s;
+      }
+
+      &:before {
+        opacity: 1;
+      }
     }
   }
 }
