@@ -7762,6 +7762,7 @@ bem-tools-create@bem-tools/bem-tools-create:
     webpack: ^5.70.0
     webpack-stream: ^7.0.0
     yargs: ^17.3.1
+    ymaps: ^0.2.1
   languageName: unknown
   linkType: soft
 
@@ -16211,6 +16212,13 @@ bem-tools-create@bem-tools/bem-tools-create:
     buffer-crc32: ~0.2.3
     fd-slicer: ~1.1.0
   checksum: 7f21fe0bbad6e2cb130044a5d1d0d5a0e5bf3d8d4f8c4e6ee12163ce798fee3de7388d22a7a0907f563ac5f9d40f8699a223d3d5c1718da90b0156da6904022b
+  languageName: node
+  linkType: hard
+
+"ymaps@npm:^0.2.1":
+  version: 0.2.1
+  resolution: "ymaps@npm:0.2.1"
+  checksum: e7d664bf2d4083a2ebbfc4477962906e99b47952b1826dc65bbc3636100f37da8136d8f76f21ea8dce0d8e32d46c898edd973a274a5414ae329e7fc6f95dc941
   languageName: node
   linkType: hard
 
