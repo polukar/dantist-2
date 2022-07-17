@@ -5,4 +5,5 @@ import "./project/header";
 import "./project/video";
 import "./project/map";
 import "./project/anchor";
-import "./project/img";
+import "./project/load";
+import "./project/qwiz";

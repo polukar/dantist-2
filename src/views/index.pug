@@ -258,7 +258,12 @@ block content
 						button.btn.btn--orange.btn--white 
 							span Записаться
 		section.sqwiz
-			.sqwiz-text виджет квиз
+			.container 	
+				.title.title--center 
+					h2.h2 Рассчитайте <br><span>предварительную стоимость</span>
+					.small-title имплантации по технологии All-on-4 за 1 минуту
+					.sqwiz__title-description + получите подарок за ответы на все вопросы
+				<div data-marquiz-id="62862ff8966fd2004fd56f17"></div>
 		section.winner 
 			.container 
 				.winner__title 
@@ -330,3 +335,4 @@ block content
 block scripts
 	script(src="js/vendor.js")
 	script(src="js/main.js")
+	<script>(function(t, p) {window.Marquiz ? Marquiz.add([t, p]) : document.addEventListener('marquizLoaded', function() {Marquiz.add([t, p])})})('Inline', {id: '62862ff8966fd2004fd56f17', buttonText: 'Получить стоимость', bgColor: '#f58119', textColor: '#ffffff', rounded: true, shadow: 'rgba(245, 129, 25, 0.5)', blicked: true, height: '770'})</script>

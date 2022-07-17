@@ -16,7 +16,16 @@ if (header) {
 
   document.addEventListener('scroll', () => {
     const posTop = document.body.getBoundingClientRect().top;
-    if (-posTop > 200) {
+    if (-posTop > 5) {
+      header.classList.add('--scroll');
+    } else {
+      header.classList.remove('--scroll');
+    }
+  })
+
+  document.addEventListener('ready', () => {
+    const posTop = document.body.getBoundingClientRect().top;
+    if (-posTop > 5) {
       header.classList.add('--scroll');
     } else {
       header.classList.remove('--scroll');
