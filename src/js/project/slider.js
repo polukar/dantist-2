@@ -21,3 +21,20 @@ const swiper = new Swiper('.reports-slider ', {
     },
   }
 });
+
+
+const swiperProd = new Swiper('.production__slider  ', {
+
+  modules: [Navigation, Pagination],
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 35,
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'progressbar',
+  },
+  navigation: {
+    nextEl: '.production__nav .next-circle',
+    prevEl: '.production__nav .prev-circle',
+  },
+});
