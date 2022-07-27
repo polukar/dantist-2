@@ -7,3 +7,4 @@ import "./project/map";
 import "./project/anchor";
 import "./project/load";
 import "./project/qwiz";
+import "./project/gallery";

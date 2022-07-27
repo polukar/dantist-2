@@ -173,17 +173,23 @@ block content
 									p Проблема
 									span Полное отсутствие зубов на верхней и нижней челюсти
 								.report-client__photos 
-									a.report-client__photo(style="background: url(../img/rep-photo.png) no-repeat center / cover")
-										.report-client__photo-tag до
+									a.report-client__photo(href="./img/rep-photo.png" data-fancybox) 
+										.report-client__photo-pic(style="background: url(./img/rep-photo.png) no-repeat center / cover")
+										.report-client__photo-tag.--before до
 										.report-client__photo-trigger 
 											img(src="./img/see.svg", alt="")
-									a.report-client__photo(style="background: url(../img/rep-photo.png) no-repeat center / cover")
-										.report-client__photo-tag до
+									a.report-client__photo(href="../img/rep-photo.png" data-fancybox) 
+										.report-client__photo-pic(style="background: url(./img/rep-photo.png) no-repeat center / cover")
+										.report-client__photo-tag.--after После
 										.report-client__photo-trigger 
 											img(src="./img/see.svg", alt="")
-									button.btn.btn--orange.btn--white
-										span У меня похожий случай
-							.report-client__right
+								button.btn.btn--orange.btn--white
+									span У меня похожий случай
+							.report-client__right(style="background: url(./img/video-report.png) no-repeat center / cover")
+								.report-client__play-button
+									img(src="./img/play-2.svg", alt="")
+									p 
+										span Видеоотзыв пациента
 		section.news 
 			.container 
 				h2.h2.news__title Дантистофф в СМИ
@@ -242,7 +248,7 @@ block content
 						.rating__summ 1 256 отзывов
 					.rating__item 
 						.rating__pic
-							img(src="./img/r-1.svg", alt="")
+							img(src="./img/r-2.svg", alt="")
 						.rating__numbers 
 							span 4,9
 							span из 5
@@ -260,7 +266,7 @@ block content
 						.rating__summ 1 256 отзывов
 					.rating__item 
 						.rating__pic
-							img(src="./img/r-1.svg", alt="")
+							img(src="./img/r-3.svg", alt="")
 						.rating__numbers 
 							span 4,9
 							span из 5
@@ -278,7 +284,7 @@ block content
 						.rating__summ 1 256 отзывов
 					.rating__item 
 						.rating__pic
-							img(src="./img/r-1.svg", alt="")
+							img(src="./img/r-4.svg", alt="")
 						.rating__numbers 
 							span 4,8
 							span из 5
@@ -296,7 +302,7 @@ block content
 						.rating__summ 1 256 отзывов
 					.rating__item 
 						.rating__pic
-							img(src="./img/r-1.svg", alt="")
+							img(src="./img/r-5.svg", alt="")
 						.rating__numbers 
 							span 120+
 							span /2-
@@ -312,6 +318,232 @@ block content
 							.rating__star 
 								img(src="./img/star.svg", alt="")
 						.rating__summ 1 256 отзывов
+		section.how
+			.container 
+				.how__title
+					h2.h2 Как формируется <span>цена</span> 
+					.winner__text Более 5000 пациентов  восстановили зубы по методу <b>«All-on-4»</b> в Дантистофф
+				.how__list 
+					.how__plus
+					.how__item 
+						.how__wrap
+							.how__top 
+								.how__top-number 1.
+								.how__top-info 
+									.how__top-title Установка имплантов
+									.how__top-under-title Подстрочная подпись
+							.how__steps 
+								.how__step
+									.how__step-pic
+										img(src="./img/how-1.webp", alt="")
+									.how__step-info
+										.how__step-title 4 импланта с установкой
+										.how__step-description установка имплантов
+								.how__step
+									.how__step-pic
+										img(src="./img/how-2.webp", alt="")
+									.how__step-info
+										.how__step-title Хирургический шаблон
+										.how__step-description установка имплантов
+								.how__step
+									.how__step-pic
+										img(src="./img/how-3.webp", alt="")
+									.how__step-info
+										.how__step-title Работа имплантолога
+										.how__step-description установка имплантов
+							.how__arrow 
+								img(src="./img/how-arrow.svg", alt="")
+							.how__price от 120 000 ₽
+							.how__price-description Итого за первый этап
+					.how__item 
+						.how__wrap
+							.how__top 
+								.how__top-number 2.
+								.how__top-info 
+									.how__top-top-title надстрочная подпись
+									.how__top-light-title Протезирование
+							.how__steps 
+								.how__step
+									.how__step-pic
+										img(src="./img/how-4.webp", alt="")
+									.how__step-info
+										.how__step-title 4 импланта с установкой
+										.how__step-description установка имплантов
+								.how__step
+									.how__step-pic
+										img(src="./img/how-5.webp", alt="")
+									.how__step-info
+										.how__step-title Хирургический шаблон
+										.how__step-description установка имплантов
+								.how__step
+									.how__step-pic
+										img(src="./img/how-6.webp", alt="")
+									.how__step-info
+										.how__step-title Работа имплантолога
+										.how__step-description установка имплантов
+							.how__arrow 
+								img(src="./img/how-arrow.svg", alt="")
+							.how__price от 120 000 ₽
+							.how__price-description Итого за первый этап
+				.how__banner
+					.how__banner-wrap
+						.how__banner-title Итого за полный ряд зубов
+						.how__banner-price за 139 000 ₽
+						.how__banner-btn 
+							button.btn.btn--orange
+								span Подробнее
+		section.doctors 
+			.container
+				.doctors__title
+					h2.h2 Вас будут лечить <span>челюстно-<br>лицевые хирурги</span> 
+					.winner__text Специалисты каждый день <br>проводят операции <br>по методу «Всё на 4-х»
+			.doctors__slider
+				.swiper-wrapper 
+					.swiper-slide 
+						.doctors__slide
+							.doctors__pic
+								img(src="./img/doctor.webp", alt="")
+							.doctor__info 
+								.doctor__title <span>Белый</span> Олег Александрович
+								.doctor__work Медицинский директор, врач стоматолог-ортопед, К.М.Н.
+								.doctor__experience Стаж: 17 лет
+								.doctor__quite Все виды протезирования и имплантации, берётся за тяжёлые случаи и достигает идеального результата
+								.doctor__btn 
+									button.btn.btn--orange
+										span Записаться на приём
+					.swiper-slide 
+						.doctors__slide
+							.doctors__pic
+								img(src="./img/doctor.webp", alt="")
+							.doctor__info 
+								.doctor__title <span>Чёрный</span> Олег Александрович
+								.doctor__work Медицинский директор, врач стоматолог-ортопед, К.М.Н.
+								.doctor__experience Стаж: 17 лет
+								.doctor__quite Все виды протезирования и имплантации, берётся за тяжёлые случаи и достигает идеального результата
+								.doctor__btn 
+									button.btn.btn--orange
+										span Записаться на приём
+					.swiper-slide 
+						.doctors__slide
+							.doctors__pic
+								img(src="./img/doctor.webp", alt="")
+							.doctor__info 
+								.doctor__title <span>Белый</span> Олег Александрович
+								.doctor__work Медицинский директор, врач стоматолог-ортопед, К.М.Н.
+								.doctor__experience Стаж: 17 лет
+								.doctor__quite Все виды протезирования и имплантации, берётся за тяжёлые случаи и достигает идеального результата
+								.doctor__btn 
+									button.btn.btn--orange
+										span Записаться на приём
+					.swiper-slide 
+						.doctors__slide
+							.doctors__pic
+								img(src="./img/doctor.webp", alt="")
+							.doctor__info 
+								.doctor__title <span>Белый</span> Олег Александрович
+								.doctor__work Медицинский директор, врач стоматолог-ортопед, К.М.Н.
+								.doctor__experience Стаж: 17 лет
+								.doctor__quite Все виды протезирования и имплантации, берётся за тяжёлые случаи и достигает идеального результата
+								.doctor__btn 
+									button.btn.btn--orange
+										span Записаться на приём
+					.swiper-slide 
+						.doctors__slide
+							.doctors__pic
+								img(src="./img/doctor.webp", alt="")
+							.doctor__info 
+								.doctor__title <span>Белый</span> Олег Александрович
+								.doctor__work Медицинский директор, врач стоматолог-ортопед, К.М.Н.
+								.doctor__experience Стаж: 17 лет
+								.doctor__quite Все виды протезирования и имплантации, берётся за тяжёлые случаи и достигает идеального результата
+								.doctor__btn 
+									button.btn.btn--orange
+										span Записаться на приём
+					.swiper-slide 
+						.doctors__slide
+							.doctors__pic
+								img(src="./img/doctor.webp", alt="")
+							.doctor__info 
+								.doctor__title <span>Белый</span> Олег Александрович
+								.doctor__work Медицинский директор, врач стоматолог-ортопед, К.М.Н.
+								.doctor__experience Стаж: 17 лет
+								.doctor__quite Все виды протезирования и имплантации, берётся за тяжёлые случаи и достигает идеального результата
+								.doctor__btn 
+									button.btn.btn--orange
+										span Записаться на приём
+					.swiper-slide 
+						.doctors__slide
+							.doctors__pic
+								img(src="./img/doctor.webp", alt="")
+							.doctor__info 
+								.doctor__title <span>Белый</span> Олег Александрович
+								.doctor__work Медицинский директор, врач стоматолог-ортопед, К.М.Н.
+								.doctor__experience Стаж: 17 лет
+								.doctor__quite Все виды протезирования и имплантации, берётся за тяжёлые случаи и достигает идеального результата
+								.doctor__btn 
+									button.btn.btn--orange
+										span Записаться на приём
+			.container
+				.doctor__slider-nav
+					.swiper-wrapper 
+						.swiper-slide 
+							.report-clients__button
+								.report-clients__photo
+									.report-clients__photo-pic(style="background: url(../img/reports-btn-pic.webp) no-repeat center / cover") 
+								.report-clients__info 
+									.report-clients__name <span>Белый</span> Олег Александрович
+									.report-clients__text Врач стоматолог-ортопед, К.М.Н.
+						.swiper-slide 
+							.report-clients__button
+								.report-clients__photo
+									.report-clients__photo-pic(style="background: url(../img/reports-btn-pic.webp) no-repeat center / cover") 
+								.report-clients__info 
+									.report-clients__name <span>Белый</span> Олег Александрович
+									.report-clients__text Врач стоматолог-ортопед, К.М.Н.
+						.swiper-slide 
+							.report-clients__button
+								.report-clients__photo
+									.report-clients__photo-pic(style="background: url(../img/reports-btn-pic.webp) no-repeat center / cover") 
+								.report-clients__info 
+									.report-clients__name <span>Белый</span> Олег Александрович
+									.report-clients__text Врач стоматолог-ортопед, К.М.Н.
+						.swiper-slide 
+							.report-clients__button
+								.report-clients__photo
+									.report-clients__photo-pic(style="background: url(../img/reports-btn-pic.webp) no-repeat center / cover") 
+								.report-clients__info 
+									.report-clients__name <span>Белый</span> Олег Александрович
+									.report-clients__text Врач стоматолог-ортопед, К.М.Н.
+						.swiper-slide 
+							.report-clients__button
+								.report-clients__photo
+									.report-clients__photo-pic(style="background: url(../img/reports-btn-pic.webp) no-repeat center / cover") 
+								.report-clients__info 
+									.report-clients__name <span>Белый</span> Олег Александрович
+									.report-clients__text Врач стоматолог-ортопед, К.М.Н.
+						.swiper-slide 
+							.report-clients__button
+								.report-clients__photo
+									.report-clients__photo-pic(style="background: url(../img/reports-btn-pic.webp) no-repeat center / cover") 
+								.report-clients__info 
+									.report-clients__name <span>Белый</span> Олег Александрович
+									.report-clients__text Врач стоматолог-ортопед, К.М.Н.
+						.swiper-slide 
+							.report-clients__button
+								.report-clients__photo
+									.report-clients__photo-pic(style="background: url(../img/reports-btn-pic.webp) no-repeat center / cover") 
+								.report-clients__info 
+									.report-clients__name <span>Белый</span> Олег Александрович
+									.report-clients__text Врач стоматолог-ортопед, К.М.Н.
+					.production__nav 
+						.prev-circle.nav-circle
+							<svg width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.9338 1.5L2.03428 11.3995L11.9338 21.299"/>
+							</svg>
+						.next-circle.nav-circle
+							<svg width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.9338 1.5L2.03428 11.3995L11.9338 21.299"/>
+							</svg>
 		section.public-people 
 			.container 
 				h2.h2 Нам доверяют <span>звёзды</span>

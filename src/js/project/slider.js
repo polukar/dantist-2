@@ -34,7 +34,33 @@ const swiperProd = new Swiper('.production__slider  ', {
     type: 'progressbar',
   },
   navigation: {
-    nextEl: '.production__nav .next-circle',
-    prevEl: '.production__nav .prev-circle',
+    nextEl: '.production__slider .next-circle',
+    prevEl: '.production__slider .prev-circle',
   },
 });
+
+
+
+var doctorSliderNav = new Swiper(".doctor__slider-nav", {
+  spaceBetween: 10,
+  slidesPerView: 3,
+  freeMode: true,
+  watchSlidesProgress: true,
+  loop: true,
+  modules: [Navigation, Pagination],
+  navigation: {
+    nextEl: '.doctor__slider-nav .next-circle',
+    prevEl: '.doctor__slider-nav .prev-circle',
+  },
+});
+
+
+var doctorSlider = new Swiper(".doctors__slider", {
+  spaceBetween: 10,
+  loop: true,
+  thumbs: {
+    swiper: doctorSliderNav,
+  },
+});
+
+
