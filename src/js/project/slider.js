@@ -42,8 +42,8 @@ const swiperProd = new Swiper('.production__slider  ', {
 
 
 var doctorSliderNav = new Swiper(".doctor__slider-nav", {
-  spaceBetween: 10,
-  slidesPerView: 3,
+  spaceBetween: 30,
+  slidesPerView: "auto",
   freeMode: true,
   watchSlidesProgress: true,
   loop: true,
@@ -52,6 +52,12 @@ var doctorSliderNav = new Swiper(".doctor__slider-nav", {
     nextEl: '.doctor__slider-nav .next-circle',
     prevEl: '.doctor__slider-nav .prev-circle',
   },
+  breakpoints: {
+    980: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+  }
 });
 
 
