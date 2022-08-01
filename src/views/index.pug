@@ -7,39 +7,39 @@ block variables
 block content
 	main.content 
 		include ../blocks/modules/header/header
-		section.main
-			.container
-				h1.h1.main__title
-					p.text-gradient НОВЫЕ ЗУБЫ
-					p за 1 день
-				.main-switch
-					.main__description 
-						.main__description-pic
-							img(src="./img/fire.svg", alt="")
-						p.main__description-text Безупречное качество <br>по самой низкой цене в Москве
-					.main__price 
-						.main__summ 179 900 ₽
-						.main__price-description 
-							.main__price-pic
-								img(src="./img/jaw.webp", alt="")
-							.main__price-text Цена указана <span>за одну челюсть</span>
-				.main__btns 
-					button.btn.btn--orange 
-						span Забронировать цену
-					button.btn.btn--dark 
-						span Нашли дешевле?
-				.main__list 
-					a.main__item(href="#") 
-						.main__item-title БЕЗУПРЕЧНАЯ РЕПУТАЦИЯ
-						.main__item-text Более 300+ видеоотзывов пациентов
-					a.main__item(href="#") 
-						.main__item-title ЛУЧШИЕ СПЕЦИАЛИСТЫ
-						.main__item-text Средний опыт наших врачей — 15 лет
-					a.main__item(href="#") 
-						.main__item-title ЧЕСТНЫЕ ЦЕНЫ ПОД КЛЮЧ
-						.main__item-text Без рекламных уловок и скрытых платежей
-					a.main__scroll(href="#reports") 
-						img(src="./img/scroll.svg", alt="")
+		//- section.main
+		//- 	.container
+		//- 		h1.h1.main__title
+		//- 			p.text-gradient НОВЫЕ ЗУБЫ
+		//- 			p за 1 день
+		//- 		.main-switch
+		//- 			.main__description 
+		//- 				.main__description-pic
+		//- 					img(src="./img/fire.svg", alt="")
+		//- 				p.main__description-text Безупречное качество <br>по самой низкой цене в Москве
+		//- 			.main__price 
+		//- 				.main__summ 179 900 ₽
+		//- 				.main__price-description 
+		//- 					.main__price-pic
+		//- 						img(src="./img/jaw.webp", alt="")
+		//- 					.main__price-text Цена указана <span>за одну челюсть</span>
+		//- 		.main__btns 
+		//- 			button.btn.btn--orange 
+		//- 				span Забронировать цену
+		//- 			button.btn.btn--dark 
+		//- 				span Нашли дешевле?
+		//- 		.main__list 
+		//- 			a.main__item(href="#") 
+		//- 				.main__item-title БЕЗУПРЕЧНАЯ РЕПУТАЦИЯ
+		//- 				.main__item-text Более 300+ видеоотзывов пациентов
+		//- 			a.main__item(href="#") 
+		//- 				.main__item-title ЛУЧШИЕ СПЕЦИАЛИСТЫ
+		//- 				.main__item-text Средний опыт наших врачей — 15 лет
+		//- 			a.main__item(href="#") 
+		//- 				.main__item-title ЧЕСТНЫЕ ЦЕНЫ ПОД КЛЮЧ
+		//- 				.main__item-text Без рекламных уловок и скрытых платежей
+		//- 			a.main__scroll(href="#reports") 
+		//- 				img(src="./img/scroll.svg", alt="")
 		section.main.main--new
 			.container
 				h1.h1.main__title
@@ -135,19 +135,19 @@ block content
 				.report-clients__buttons 
 					.report-clients__button.-is-active 
 						.report-clients__photo
-							.report-clients__photo-pic(style="background: url(../img/reports-btn-pic.webp) no-repeat center / cover") 
+							.report-clients__photo-pic(style="background: url(./img/reports-btn-pic.webp) no-repeat center / cover") 
 						.report-clients__info 
 							.report-clients__name Кристина Анатольевна
 							.report-clients__text Преображение после 11 лет мучений со съемными протезами
 					.report-clients__button 
 						.report-clients__photo
-							.report-clients__photo-pic(style="background: url(../img/reports-btn-pic.webp) no-repeat center / cover")  
+							.report-clients__photo-pic(style="background: url(./img/reports-btn-pic.webp) no-repeat center / cover")  
 						.report-clients__info 
 							.report-clients__name Кристина Анатольевна
 							.report-clients__text Преображение после 11 лет мучений со съемными протезами
 					.report-clients__button 
 						.report-clients__photo
-							.report-clients__photo-pic(style="background: url(../img/reports-btn-pic.webp) no-repeat center / cover") 
+							.report-clients__photo-pic(style="background: url(./img/reports-btn-pic.webp) no-repeat center / cover") 
 						.report-clients__info 
 							.report-clients__name Кристина Анатольевна
 							.report-clients__text Преображение после 11 лет мучений со съемными протезами
@@ -173,12 +173,12 @@ block content
 									p Проблема
 									span Полное отсутствие зубов на верхней и нижней челюсти
 								.report-client__photos 
-									a.report-client__photo(href="./img/rep-photo.png" data-fancybox) 
+									a.report-client__photo.report-client__photo--before(href="./img/rep-photo.png" data-fancybox) 
 										.report-client__photo-pic(style="background: url(./img/rep-photo.png) no-repeat center / cover")
 										.report-client__photo-tag.--before до
 										.report-client__photo-trigger 
 											img(src="./img/see.svg", alt="")
-									a.report-client__photo(href="../img/rep-photo.png" data-fancybox) 
+									a.report-client__photo(href="./img/rep-photo.png" data-fancybox) 
 										.report-client__photo-pic(style="background: url(./img/rep-photo.png) no-repeat center / cover")
 										.report-client__photo-tag.--after После
 										.report-client__photo-trigger 
@@ -489,49 +489,49 @@ block content
 						.swiper-slide 
 							.report-clients__button
 								.report-clients__photo
-									.report-clients__photo-pic(style="background: url(../img/reports-btn-pic.webp) no-repeat center / cover") 
+									.report-clients__photo-pic(style="background: url(./img/reports-btn-pic.webp) no-repeat center / cover") 
 								.report-clients__info 
 									.report-clients__name <span>Белый</span> Олег Александрович
 									.report-clients__text Врач стоматолог-ортопед, К.М.Н.
 						.swiper-slide 
 							.report-clients__button
 								.report-clients__photo
-									.report-clients__photo-pic(style="background: url(../img/reports-btn-pic.webp) no-repeat center / cover") 
+									.report-clients__photo-pic(style="background: url(./img/reports-btn-pic.webp) no-repeat center / cover") 
 								.report-clients__info 
 									.report-clients__name <span>Белый</span> Олег Александрович
 									.report-clients__text Врач стоматолог-ортопед, К.М.Н.
 						.swiper-slide 
 							.report-clients__button
 								.report-clients__photo
-									.report-clients__photo-pic(style="background: url(../img/reports-btn-pic.webp) no-repeat center / cover") 
+									.report-clients__photo-pic(style="background: url(./img/reports-btn-pic.webp) no-repeat center / cover") 
 								.report-clients__info 
 									.report-clients__name <span>Белый</span> Олег Александрович
 									.report-clients__text Врач стоматолог-ортопед, К.М.Н.
 						.swiper-slide 
 							.report-clients__button
 								.report-clients__photo
-									.report-clients__photo-pic(style="background: url(../img/reports-btn-pic.webp) no-repeat center / cover") 
+									.report-clients__photo-pic(style="background: url(./img/reports-btn-pic.webp) no-repeat center / cover") 
 								.report-clients__info 
 									.report-clients__name <span>Белый</span> Олег Александрович
 									.report-clients__text Врач стоматолог-ортопед, К.М.Н.
 						.swiper-slide 
 							.report-clients__button
 								.report-clients__photo
-									.report-clients__photo-pic(style="background: url(../img/reports-btn-pic.webp) no-repeat center / cover") 
+									.report-clients__photo-pic(style="background: url(./img/reports-btn-pic.webp) no-repeat center / cover") 
 								.report-clients__info 
 									.report-clients__name <span>Белый</span> Олег Александрович
 									.report-clients__text Врач стоматолог-ортопед, К.М.Н.
 						.swiper-slide 
 							.report-clients__button
 								.report-clients__photo
-									.report-clients__photo-pic(style="background: url(../img/reports-btn-pic.webp) no-repeat center / cover") 
+									.report-clients__photo-pic(style="background: url(./img/reports-btn-pic.webp) no-repeat center / cover") 
 								.report-clients__info 
 									.report-clients__name <span>Белый</span> Олег Александрович
 									.report-clients__text Врач стоматолог-ортопед, К.М.Н.
 						.swiper-slide 
 							.report-clients__button
 								.report-clients__photo
-									.report-clients__photo-pic(style="background: url(../img/reports-btn-pic.webp) no-repeat center / cover") 
+									.report-clients__photo-pic(style="background: url(./img/reports-btn-pic.webp) no-repeat center / cover") 
 								.report-clients__info 
 									.report-clients__name <span>Белый</span> Олег Александрович
 									.report-clients__text Врач стоматолог-ортопед, К.М.Н.
